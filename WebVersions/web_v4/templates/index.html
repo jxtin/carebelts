@@ -130,12 +130,13 @@ hv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         var accessCode = "{{ button_accesscode }}";
         const timezone = new Date().getTimezoneOffset();
         console.log(timezone)
-        // Highcharts.setOptions({
-        //     global: {
-        //         timezoneOffset: timezone
-        //     },
-        //     backgroundColor: 'transparent'
-        // });
+        Highcharts.setOptions({
+            global: {
+                timezoneOffset: timezone
+            },
+            backgroundColor: 'transparent'
+        });
+        // comment the above line to use UTC timezone
 
         function vButton(ButtonNumber) {
             // presses button number depending upon parameter passed
@@ -362,14 +363,9 @@ hv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
                         }
 
 
-                        // Suggestion keep the alerts commented when not in use
-                        if (data3[1] > 105) {
+                        if (data3[1] > 100) {
                             $(`.temp_value${i}`).css("color", "red");
-                            // window.alert(`Temperature is too high for your Pet`);
-                        }
-                        else if (data3[1] < 98) {
-                            $(`.temp_value${i}`).css("color", "blue");
-                            // window.alert(`Temperature is too low for your Pet`);
+                            window.alert(`Temperature is too high for user`);
                         }
                         else {
                             $(`.temp_value${i}`).css("color", "green");
@@ -377,21 +373,13 @@ hv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
                         if (data2[1] < 95) {
                             $(`.spo2_value${i}`).css("color", "red");
-                            // window.alert(`SPO2 is low for your Pet`);
+                            window.alert(`SPO2 is low for user`);
                         } else {
                             $(`.spo2_value${i}`).css("color", "green");
                         }
-                        if (data1[1] > 140) {
+                        if (data1[1] > 120) {
                             $(`.hr_value${i}`).css("color", "red");
-                            // window.alert(`Heartrate is high for your Pet`);
-
-                        }
-                        else if (data1[1] < 95) {
-                            $(`.hr_value${i}`).css("color", "blue");
-                            // window.alert(`Heartrate is low for your Pet`);
-
-                        }
-                        else {
+                        } else {
                             $(`.hr_value${i}`).css("color", "green");
                         }
 
@@ -449,10 +437,10 @@ hv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
                     name: 'Heartrate',
                     data: [],
                     zones: [{
-                        value: 95,
+                        value: 60,
                         color: '#7cb5ec'
                     }, {
-                        value: 140,
+                        value: 115,
                         color: '#86f77e'
                     }, {
                         color: '#FC8F78'
@@ -573,10 +561,10 @@ hv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
                     name: 'Temperature',
                     data: [],
                     zones: [{
-                        value: 98,
+                        value: 97,
                         color: '#7cb5ec'
                     }, {
-                        value: 105,
+                        value: 100,
                         color: '#86f77e'
                     }, {
                         color: '#FC8F78'

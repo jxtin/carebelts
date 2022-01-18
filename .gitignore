@@ -1,2 +1,10 @@
 .vscode/settings.json
 WebVersions/README.md
+WebVersions/web_v0/.env
+WebVersions/web_v1/.env
+WebVersions/web_v2/.env
+WebVersions/web_v3/.env
+WebVersions/web_v4/.env
+WebVersions/web_v1/generating_dataOOP.py
+WebVersions/web_v2/generating_dataOOP.py
+WebVersions/web_v3/generating_dataOOP.py

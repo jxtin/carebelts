@@ -48,14 +48,14 @@ class HealthParameters:
         hr_dev = 0
         temperature_dev = 0
         spo2_dev = 0
-        if hr_value > 145:
-            hr_dev = (hr_value - 145) / 145
-        elif hr_value < 100:
-            hr_dev = (100 - hr_value) / 100
+        if hr_value > 110:
+            hr_dev = (hr_value - 110) / 110
+        elif hr_value < 70:
+            hr_dev = (70 - hr_value) / 70
         if spo2_value < 97:
-            spo2_dev = (97.5 - spo2_value) / 97.5
-        if temperature_value > 106:
-            temperature_dev = ((temperature_value - 105) / 105) * 3
+            spo2_dev = (97 - spo2_value) / 97
+        if temperature_value > 99.2:
+            temperature_dev = ((temperature_value - 98.6) / 98.6) * 3
         elif temperature_value < 98:
             temperature_dev = (98 - temperature_value) / 98
         print(
@@ -71,10 +71,10 @@ class HealthParameters:
         return output_result
 
     def update_data(self):
-        self.hr_value += random.randint(-5, 5)
+        self.hr_value += random.randint(-20, 30) / 10
         self.hr_value = int(self.hr_value)
-        self.spo2_value += random.randint(-2, 4) / 10
-        self.temperature_value += random.randint(-50, 50) / 100
+        self.spo2_value += random.randint(-3, 3) / 10
+        self.temperature_value += random.randint(-15, 15) / 100
         self.spo2_value = round(self.spo2_value, 2)
         if self.spo2_value > 100:
             self.spo2_value = 100
@@ -103,7 +103,7 @@ class HealthParameters:
 
 # create an object of the class HealthParameters name, hr_value, spo2_value, temperature_value
 
-track_data = HealthParameters("carebelt_final", 142, 97, 104)
+track_data = HealthParameters("carebelt_v4", 100, 98, 98.6)
 
 
 def post_document(track_data):
@@ -131,9 +131,9 @@ def post_document(track_data):
         print(f"You have created the document:\n{data}")  # logs document
         print("Restarting the system with default values")
 
-        track_data.hr_value = 145
-        track_data.spo2_value = 98
-        track_data.temperature_value = 104
+        track_data.hr_value = 85
+        track_data.spo2_value = 99
+        track_data.temperature_value = 98.9
 
 
 if __name__ == "__main__":
