@@ -11,7 +11,7 @@ Carebelts provide continuous tracking of four of their vitals : *SPO2, heart rat
 Those who are being monitored will have a carebelt while the person who wishes to monitor will recieve a web and app based dashboard so they can keep a check on their loved ones as and when required. 
 Carebelts is a unique way to ensure the well-being of the ones we wish to care about, physically and emotionally, and interacting using the capabilities of IOT and smart homes.
 
-As the part of our POC we have hardware files and software codes linked, which includes cad models, stl files, circuit diagrams, and the codebase for software end. We also have deployed the application and web dashboard with mock data available 24*7 for an experience of how software end appears and reacts to the inputs, to test it out.
+As the part of our POC we have hardware files and software codes linked, which includes CAD models, stl files, circuit diagrams, and the codebase for the software end. We also have deployed the application and web dashboard with mock data available 24*7 for an experience of how software end appears and reacts to the inputs, to test it out.
 
 
 
