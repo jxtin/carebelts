@@ -127,7 +127,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: SizedBox(
                     width: screenWidth,
                     child: Image.asset(
-                      "img/pink_circle.png",
+                      "img/purple_circle.png",
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -174,10 +174,4 @@ class _LoginPageState extends State<LoginPage> {
       ),
     ));
   }
-}
-
-class HeartRateData {
-  HeartRateData(this.HeartRate, this.time);
-  final int HeartRate;
-  final dynamic time;
 }

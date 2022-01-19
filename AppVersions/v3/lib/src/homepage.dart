@@ -544,7 +544,7 @@ class _HomePageState extends State<HomePage> {
                 backgroundColor: Colors.blue.shade500,
                 centerTitle: true,
                 title: Text(
-                  "AUTOMATED MONITORING",
+                  "MONITORING",
                   style: TextStyle(fontFamily: "Montserrat", fontSize: 24),
                 ),
               ),

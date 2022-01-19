@@ -25,9 +25,9 @@ class _SplashState extends State<Splash> {
 
   @override
   Widget build(BuildContext context) {
-    precacheImage(AssetImage(MAIN_ICON), context);
+    precacheImage(AssetImage("img/main_icon.png"), context);
     return Scaffold(
-        backgroundColor: Colors.purple.shade200,
+        backgroundColor: Colors.blue.shade200,
         body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -42,7 +42,7 @@ class _SplashState extends State<Splash> {
               )),
               Container(
                 child: Text(
-                  "Paw'llar",
+                  APP_TITLE,
                   style: TextStyle(fontFamily: "Cotton Butter", fontSize: 64),
                   textAlign: TextAlign.center,
                 ),
