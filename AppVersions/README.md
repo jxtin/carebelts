@@ -1,6 +1,17 @@
 ## Carebelts : Mobile application Interface
 -----------------------------------------------------------------
 
+
+
+## About Carebelts
+
+- The app uses ```http.dart``` to make API requests.
+- Dynamic charts are built using flutter package ```syncfusion_charts package```.
+- Live fetching of data from ```Cloudant database of IBM services``` allowing fast requesting to read data using read API Key.
+- Sign up process takes place via using a creative solution of using a database as a key-pass storage.
+
+
+
 # Pre-requisites
 -----------------------------------------------------------------
 
