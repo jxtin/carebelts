@@ -1,7 +1,7 @@
 # Carebelts : Hardware
 
 
-This folder of the project contains **electrical circuits, CAD Models, and the codes** associated with the circuits needed for the physical PAW'llar units as well as the pet feeder.
+This folder of the project contains **electrical circuits, CAD Models, and the codes** associated with the circuits needed for the physical carebelt units as well as the pet feeder.
 
 
 ### Following are the CAD models for the physical unit present in folder v1 :
