@@ -2,6 +2,7 @@ import cv2
 import os
 
 FILE_NAME = "ic_launcher.png"
+CURRENT_DIRECTORY = os.getcwd().replace('\\','/')
 
 icon = cv2.imread("main_icon.png",  cv2.IMREAD_UNCHANGED)
 
@@ -15,5 +16,5 @@ icons =  {
 
 for num in range(5):
     for size,icon in icons.items():
-        os.chdir(f"E:/App Dev - Flutter/AppVersions/v{num}/android/app/src/main/res/{icon['foldername']}")
+        os.chdir(f"{CURRENT_DIRECTORY}/v{num}/android/app/src/main/res/{icon['foldername']}")
         cv2.imwrite(FILE_NAME,icon['img'])
