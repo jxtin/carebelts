@@ -31,7 +31,7 @@ flutter build apk
 
 Version 0
 ```
-username: carebelt_v0
+username: coband
 password: password
 ```
 
@@ -43,8 +43,8 @@ password: password
 
 Version 2
 ```
-username: carebelt_v2
-password: password
+username: jatin
+password: wontreveal
 ```
 
 Version 3
