@@ -3,6 +3,7 @@
 ## INTRODUCTION
 
 
+
 **Carebelts** is a product idea developed by Team Pontiac Bandits.
 It is an automated monitoring and caretaking system for children/babies/pets/elderly people etc which can be set up to cater to every need of you and your loved ones while you are away from home.
 CARE-Belts are collars/bands that can generate a health or comfort index of your pets/children/old parents’ vitals in order to automatically trigger various appliances in your home by accounting and reporting the deviation of the being’s vitals from their normal range sent to the integrated software app/website on the home owner’s phone. This is done by allowing the person’s home to be automated through a basic Alexa that is integrated with all the needful output devices like lights, fans, thermistors etc. Extra devices like micro-controller based feeders have also been seamlessly integrated within the same application ensuring that every need of the individual staying home is catered to a one-fits all click-based solution.
